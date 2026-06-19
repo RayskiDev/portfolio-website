@@ -537,8 +537,8 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 const geometry = new THREE.SphereGeometry(3, 24, 24);
 
 const textureLoader = new THREE.TextureLoader();
-const colorTexture = textureLoader.load("/imagesEarth/color.webp");
-const emissionTexture = textureLoader.load("/imagesEarth/emission.webp");
+const colorTexture = textureLoader.load("./imagesEarth/color.webp");
+const emissionTexture = textureLoader.load("./imagesEarth/emission.webp");
 
 colorTexture.colorSpace = THREE.SRGBColorSpace;
 emissionTexture.colorSpace = THREE.SRGBColorSpace;
