@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marek Pielka | Web Developer</title>
+
+    <meta name="description" content="Oferuję profesjonalne usługi tworzenia stron internetowych i aplikacji webowych.">
+    <meta name="keywords" content="web developer, frontend developer, HTML, CSS, JavaScript">
+    <meta name="author" content='Marek "RayskiDev" Pielka'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <script src="https://kit.fontawesome.com/dd27f562fc.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&family=JetBrains+Mono&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <script type="importmap" defer>
+        {
+            "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/",
+            "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js",
+            "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"
+            }
+        }
+    </script>
+</head>
+
+<body class="loading">
+    <section class="loading-screen">
+        <div class="loading-wrapper">
+            <div id="loading-container"></div>
+            <h3>by Rayski<span>Dev</span></h3>
+        </div>
+    </section>
+
+    <header>
+        <div class="header-inner-container">
+            <div class="logo">Rayski<span>Dev</span>.</div>
+
+            <div id="burger-menu" class="burger-nav" aria-expanded="false" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <div class="nav-bg-lines"></div>
+
+                <div class="nav-mobile-status">
+                    <span class="nav-status-pulse"></span>
+                    <span class="nav-status-text">SYSTEM_NAV // ONLINE</span>
+                </div>
+
+                <ul>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+
+                <div class="nav-mobile-footer">
+                    <span>SECURITY CLEARANCE CHECKED</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-background">
+                <div class="globe">
+                    <canvas id="globeCanvas"></canvas>
+                </div>
+            </div>
+
+            <div class="hero-wrapper">
+                <div class="hero-left">
+                    <h1>Marek<br>Pielka</h1>
+                    <h2>Web Developer</h2>
+                </div>
+                <div class="hero-right">
+                    <p class="hero-signature"><span>Designed</span> to be<br>remembered.</p>
+
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">Pokaż portfolio<i class="fa-solid fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Skontaktuj się<i class="fa-solid fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-wrapper">
+                <div class="bg-glow-circle"></div>
+
+                <div class="system-frame">
+                    <div class="dossier-meta-strip">
+                        <div class="security-status">
+                            <span class="status-indicator"></span>
+                            <span class="status-text">SECURITY LEVEL // DECLASSIFIED</span>
+                        </div>
+                        <div class="file-reference">FILE_REF // MP01-2026_DOSSIER</div>
+                    </div>
+
+                    <div class="dossier-header">
+                        <h2>SUBJECT: MAREK PIELKA</h2>
+                        <div class="metadata-grid">
+                            <div class="meta-item">
+                                <span class="meta-label">ALIAS</span>
+                                <span class="meta-value">FRONTEND DEVELOPMENT</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">STATUS</span>
+                                <span class="meta-value">OPERATIVE</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">LOCATION</span>
+                                <span class="meta-value">POLAND (EU)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="system-divider">
+                        CLASSIFIED ARCHIVE NODE
+                    </div>
+
+                    <div class="dossier-body">
+                        <div class="dossier-axis-line"></div>
+
+                        <div class="dossier-content">
+                            <div class="data-segment">
+                                <h3>01 // SUMMARY</h3>
+                                <p>
+                                    Projektant nowoczesnych doświadczeń cyfrowych
+                                    opartych na atmosferze,
+                                    minimalizmie oraz świadomej interakcji użytkownika. Łączy frontend development z
+                                    estetyką cinematic UI,
+                                    tworząc interfejsy skupione nie tylko na funkcjonalności, ale również na emocjach i
+                                    niezapomnianym doświadczeniu.
+                                </p>
+                            </div>
+
+                            <div class="data-segment">
+                                <h3>02 // SPECIALIZATION</h3>
+                                <p>
+                                    Główny obszar działalności obejmuje tworzenie immersyjnych środowisk webowych,
+                                    interaktywnych interfejsów
+                                    oraz nowoczesnych systemów. Szczególny nacisk kładziony jest na
+                                    płynność doświadczenia,
+                                    architekturę wizualną oraz budowanie cyfrowej atmosfery inspirowanej współczesnym
+                                    designem i narracją
+                                    wizualną.
+                                </p>
+                            </div>
+
+                            <div class="data-segment">
+                                <h3>03 // SELECTED ACTIVE ENVIRONMENT</h3>
+                                <div class="env-group">
+                                    <span class="env-label">FRONTEND</span>
+                                    <div class="clearance-tags">
+                                        <span>HTML5</span>
+                                        <span>CSS3</span>
+                                        <span>JavaScript_ES6</span>
+                                        <span>React</span>
+                                        <span>TypeScript</span>
+                                        <span>TailwindCSS</span>
+                                    </div>
+                                </div>
+
+                                <div class="env-group">
+                                    <span class="env-label">BACKEND</span>
+                                    <div class="clearance-tags">
+                                        <span>PHP</span>
+                                        <span>MySQL</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="env-group">
+                                    <span class="env-label">CREATIVE PIPELINE</span>
+                                    <div class="clearance-tags">
+                                        <span>Blender_3D</span>
+                                        <span>Unreal_Engine</span>
+                                        <span>Figma</span>
+                                        <span>Adobe_Photoshop</span>
+                                    </div>
+                                </div>
+
+                                <div class="env-group">
+                                    <span class="env-label">WORKFLOW</span>
+                                    <div class="clearance-tags">
+                                        <span>Visual_Storytelling</span>
+                                        <span>Responsive_Architecture</span>
+                                        <span>Performance_Optimization</span>
+                                        <span>Component_Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="projects-header">
+                <span class="projects-pretitle">MODULE_REF // PROJECTS_ARCHIVE</span>
+                <div class="projects-title-row">
+                    <h2 class="projects-title">Projekty</h2>
+                    <div class="clearance-indicator">
+                        <span class="indicator-pulse"></span>
+                        <span class="indicator-text">CHECKING AUTHORIZATION</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="confidential-monolith-strip">
+                <div class="project-auth-terminal" id="projectTerminal" style="opacity: 0; display: none;">
+                    <div class="terminal-gate">
+                        <div class="terminal-node-header">
+                            <span id="terminalPrompt">>_</span>NODE_AUTH_GATE // SECURE_CORE
+                        </div>
+
+                        <div class="terminal-body-wrapper" style="max-height: 0; overflow: hidden;">
+                            <div class="terminal-node-body">
+                                <p class="term-comment">// WARNING: RESTRICTED REPOSITORIES DETECTED</p>
+                                <p class="term-comment">// TEMPORARY BYPASS TOKEN: <span id="bypassToken">7391</span>
+                                </p>
+
+                                <div class="term-field">
+                                    <label>ACCESS_ID:</label>
+                                    <input type="text" value="GUEST_RECRUITER" disabled class="term-input">
+                                </div>
+
+                                <div class="term-field">
+                                    <label>BYPASS_KEY:</label>
+                                    <input type="text" id="terminalKeyInput" maxlength="4" placeholder="0000"
+                                        class="term-input" autocomplete="off">
+                                </div>
+
+                                <div class="terminal-actions">
+                                    <button id="btnTermSubmit" class="btn-term">CONNECT</button>
+                                    <button id="btnTermSkip" class="btn-term btn-term-danger">[ FORCE OVERRIDE
+                                        ]</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="monolith-blur-overlay">
+                    <div class="confidential-center-badge">
+                        <i class="fa-solid fa-lock"></i>
+                        <h2>CONFIDENTIAL</h2>
+                        <span>ACCESS DENIED</span>
+                    </div>
+                </div>
+
+                <div class="projects-grid-underlay">
+
+                    <div class="project-card-spec">
+                        <div class="card-spec-header">
+                            <span class="spec-id">PROJ_01 //</span>
+                            <span class="spec-tag">[RESTRICTED DATA]</span>
+                        </div>
+                        <div class="card-spec-body">
+                            <h3>ACCESS VECTOR: NULL-SECTOR</h3>
+                            <p>
+                                [SYS::BUFFER_LOCK] — protokół wymiany danych utrzymany w stanie
+                                fragmentacji. Rekordy wejściowe nieosiągalne dla dekodera L2.
+                                Operacja zakończona bez przypisania funkcji operacyjnej.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card-spec">
+                        <div class="card-spec-header">
+                            <span class="spec-id">PROJ_02 //</span>
+                            <span class="spec-tag">[RESTRICTED DATA]</span>
+                        </div>
+                        <div class="card-spec-body">
+                            <h3>ACCESS VECTOR: NULL-SECTOR</h3>
+                            <p>
+                                [DATA_STREAM::OBFUSCATED] — segment 7B aktywowany w trybie pasywnym.
+                                Wartości wejściowe przemapowane do warstwy niejednoznacznej.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card-spec">
+                        <div class="card-spec-header">
+                            <span class="spec-id">PROJ_03 //</span>
+                            <span class="spec-tag">[RESTRICTED DATA]</span>
+                        </div>
+                        <div class="card-spec-body">
+                            <h3>ACCESS VECTOR: NULL-SECTOR</h3>
+                            <p>
+                                [VISUAL_PIPE::STREAM HOLD] — klatki referencyjne wygenerowane
+                                poza zakresem interpretacji. Warstwa prezentacyjna działa w trybie
+                                losowej interpolacji sygnału.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact" class="contact-section">
+            <div class="contact-wrapper">
+
+                <div class="contact-info-panel">
+                    <div class="panel-header-block">
+                        <span class="contact-pretitle">TERMINAL // ENCRYPTED COMMS</span>
+                        <h2 class="contact-title">Nawiąż kontakt</h2>
+                        <p class="contact-lead">Autoryzuj transmisję poniżej, aby uzyskać klucz deszyfrujący do sekcji z
+                            projektami lub omówić warunki współpracy.</p>
+                    </div>
+
+                    <div class="contact-meta-list">
+                        <div class="meta-line">
+                            <span class="meta-label">DIRECT EMAIL //</span>
+                            <a href="mailto:mpielka80@gmail.com" class="meta-value email-link">mpielka80@gmail.com</a>
+                        </div>
+                        <div class="meta-line">
+                            <span class="meta-label">SECURE NODE //</span>
+                            <span class="meta-value">READY FOR INBOUND</span>
+                        </div>
+                    </div>
+
+                    <div class="social-networks-block">
+                        <span class="social-label">EXTERNAL CHANNELS:</span>
+                        <div class="social-links-container">
+                            <a href="https://github.com/RayskiDev" title="GitHub" target="_blank" aria-label="GitHub"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.youtube.com/@RayskiSwiat" title="YouTube" target="_blank"
+                                aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/serniczek1552/" title="Instagram" target="_blank"
+                                aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-bottom">
+            <p>&copy;2026 <span>Marek Pielka</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="notifications"></div>
+
+    <!-- SCRIPTS IMPORTS -->
+    <script src="/main.js" type="module"></script>
+</body>
+
+</html>
